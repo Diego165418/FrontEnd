@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="archivo.php">
+
+        <!-- Atrubutos: value="" readonly disabled id="(UNICO PA CADA ETIQUETA)"-->
+        <label for="apellido">Apellido:</label><input type="text" name="apellido" id="apellido" maxlength="20">
+        <br><br><br>
+        <input type="text" placeholder="Nombre"maxlength="20" required name="nombre" autofocus>
+        <br>
+        <input type="text" name="apellido" id="apellido" maxlength="20" placeholder="Apellido">
+        <br>
+        <input type="email" placeholder="Email" name="email" > 
+        <br>
+        <input type="password" placeholder="Contraseña">
+        <br>
+        <textarea id="" cols="70" rows="10" maxlength="50" placeholder="Describa el Problema" name="Problema"></textarea>
+        <br>
+        <select name="modelo" id="modelo">
+            <option value="Modelo1">Modelo 1</option><!-- value es lo que se envia al servidor -->
+            <option value="2">Modelo 2</option>
+            <option value="3">Modelo 3</option>
+        </select>
+        <br>
+        <section>
+            <input type="radio" name="Color"value="Negro" id="negro">
+            <label for="negro">Negro</label>
+            <input type="radio" name="Color"value="Blanco" id="blanco">Blanco
+            <input type="radio" name="Color"value="Purpura" id="Purpura">
+            <label for="Purpura">Purpura</label>
+        </section>
+        <br>
+        <input type="checkbox" name="Accesorios" value="MicroSD" id="MicroSD">
+        <label for="MicroSD">Memoria SD</label>
+        <input type="checkbox" name="Accesorios" value="VidrioTemplado" id="VidrioTemplado">
+        <label for="VidrioTemplado">VidrioTemplado</label>
+        <input type="checkbox" name="Accesorios" value="Carcaza" id="Carcaza">
+        <label for="Carcaza">Carcaza</label>
+        <br><br>
+        <label for="pickcolor">Elija un color de la paleta: </label>
+        <input type="color" name="pickcolor" id="pickcolor">
+        <br>
+        <label for="product">Cuantos dispositivos desea: </label>
+        <input type="number" name="product" id="product" min="1" max="5">
+        <br>
+        <label for="cuota">Cuantas cuotas desea para el producto, el defecto es 5:  </label>
+        <input type="range" name="cuota" id="cuota" min="1" max="9">
+        <br>
+        <label for="cuota">Seleccione el recibo: </label>
+        <input type="file" name="Recibo" id="Recibo" required>
+        <br>
+        <label for="cuota">Seleccione fecha de entrega: </label>
+        <input type="datetime-local" name="FechaTiempo" id="datetime">
+        <br><br>
+
+        <input type="submit"  value="Comprar"><br><br>
+
+        <input list="Modelos">
+        <datalist id="Modelos">
+            <option value="Modelo 1">
+            <option value="Modelo 2">
+            <option value="Modelo 3">
+        </datalist>
+    </form> 
+</body>
+</html>
